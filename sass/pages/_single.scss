@@ -1,0 +1,32 @@
+.single {
+
+	&__title {
+		margin: 20px 0 0 0;
+		font-size: 30px;
+	}
+
+	&__image {
+		margin: 20px 0 0 0;
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__text {
+		margin: 20px 0 0 0;
+		padding: 0 10px;
+		line-height: 20px;
+	}
+}
+
+.breadcrumps {
+
+	&__link {
+		color: #939597;
+	}
+
+	&__text {
+		color: #939597;
+	}
+}

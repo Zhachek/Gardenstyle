@@ -1,0 +1,21 @@
+//  Стили для боковых панелей
+
+
+.hot {
+	padding-left: 30px;
+	border-left: 2px solid #d4d4d4;
+	
+	// &__title {
+	
+	// }
+
+	&__block {
+		padding: 10px 0;
+	}
+
+	&__txt {
+		margin: 5px 0 0 0;
+		line-height: 15px;
+	}
+	
+}

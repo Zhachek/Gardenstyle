@@ -1,0 +1,61 @@
+//  Стили для подвала сайта
+
+.footer {
+	//.mainHeader (layout/_header.scss)
+	@extend .mainHeader;
+	margin: 40px 0 0 0;
+	height: auto;
+	box-shadow: 0 -2px 5px rgba(0,0,0,.1);
+
+	&__inner {
+		@extend %inner;
+	}
+
+	&__logo {
+		@extend .mainHeader__logo;
+		margin: 15px 0 0 0;
+
+	}
+
+	&__image {
+		width: 100px;
+		height: 70px;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
+	}
+
+	&__menu {
+		@extend .mainHeader__menu;
+		margin: 0 0 0 15px;
+	}
+
+	&__list {
+		@extend %clr;
+	}
+
+	&__item {
+		@extend .mainHeader__item
+	}
+
+	&__link {
+		@extend .mainHeader__link;
+		font-size: 13px;
+		font-weight: normal;
+		line-height: 102px;
+		margin: 0;
+
+		&:hover {
+			color: #000;
+		}
+	}
+
+	
+}
+
+.site-map__link {
+	@extend .footer__link;
+}
+
+.copyright__text {
+	@extend .footer__link;
+}

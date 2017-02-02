@@ -1,0 +1,21 @@
+//  Стили для часто используемых элементов HTML
+
+@import "compass/css3";
+
+body {
+	margin: 0 auto;
+    width: auto;
+    color: #3b4143;
+    background: #f2f2f2;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+}
+
+%inner {
+	position: relative;
+    width: 994px;
+    margin: 0 auto;
+}
+
+
+

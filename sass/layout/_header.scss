@@ -1,0 +1,195 @@
+//  Стили для шапки сайта
+
+@import 'utils/variables';
+
+// BEGIN toplane=============================
+.toplane {
+	display: block;
+	height: 36px;
+	background-color: $main-bg-color;
+	border-bottom: 1px solid #e1e1e2;
+	@extend %clr;
+	
+	&__inner {
+		@extend %inner;
+	}
+
+	.right {
+		float: right;
+	}
+
+	&__socials {
+		display: inline-block;
+		
+		& a {
+			margin-top: 8px;
+			width: 20px;
+		    height: 20px;
+		    overflow: hidden;
+		    position: relative;
+		    color: #575c5f;
+		}
+	}
+
+	&__menu {
+		vertical-align: top;
+    	margin-top: 7px;
+    	display: inline-block;
+	}
+
+	&__list {
+		display: inline-block;
+	}
+
+	&__item {
+		margin-left: 10.5px;
+    	display: inline-block;
+	}
+
+	&__link {
+		font-size: 11px;
+		color: #575c5f;
+	}
+
+	&__search {
+		vertical-align: top;
+		margin: 2px 0 0 20px;
+		display: inline-block;
+		position: relative;
+	}
+
+	.search {
+		&__field {
+			padding: 0 40px 0 12px;
+		    font-size: 12px;
+		    line-height: 1.35;
+		    color: #000;
+		    outline: none;
+		    border: 1px solid #e6e6e6;
+		    border-radius: 2rem;
+		    height: 30px!important;
+		    background-color: #fff;
+		    box-shadow: none;
+		    width: 200px;
+		    display: inline-block;
+		    position: relative;
+		    z-index: 2;
+		}
+
+		&__btn {
+			border: 2px solid #575c5f;
+		    position: absolute;
+		    z-index: 2;
+		    background: #fff;
+		    color: #575c5f;
+		    margin: 0;
+		    vertical-align: bottom;
+		    right: 3px;
+		    top: 3px;
+		    height: 24px;
+		    width: 25px;
+		    padding: 0;
+		    border-radius: 100%;
+		    display: inline-block;
+		    text-align: center;
+		    cursor: pointer;
+		    white-space: nowrap;
+		    outline: none;
+		    -moz-appearance: none;
+		    -webkit-appearance: none;
+		}
+	}
+}
+
+// END toplane==============================
+
+// BEGIN mainHeader=========================
+	.mainHeader {
+		position: relative;
+		background: $sec-bg-color;
+		box-shadow: 0 2px 5px rgba(0,0,0,.1);
+		height: 101px;
+		
+		&__inner {
+			@extend %inner;
+		}
+
+		&__logo {
+			display: inline-block;
+
+		}
+
+		&__image {
+			width: 150px;
+			height: 100px;
+		}
+
+		&__menu {
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 0 0 80px;
+		}
+
+		&__list {
+			@extend %clr;
+		}
+
+		&__item {
+			float: left;
+
+			&:hover .mainHeader__submenu {
+				display: block;
+			}
+		}
+
+		&__link {
+			position: relative;
+			display: block;
+			font-size: 22px;
+			padding: 0 10px;
+			color: #575c5f;
+			font-weight: bold;
+			font-family: 'Roboto', sans-serif;
+			line-height: 101px;
+
+			&:hover {
+				color: #0fadc4;
+				text-decoration: none;
+			}
+		}
+
+		&__link_active {
+			margin: 0;
+			color: #0fadc4;
+		}
+
+		&__submenu {
+			display: none;
+			position: absolute;
+			top: 60px;
+			min-width: 200px;
+			margin-left: -14px;
+			background: #fff;
+		    min-width: 180px;
+		    max-height: 300px;
+		    padding: 7px 14px;
+		    border-radius: 3px;
+		    box-shadow: 0 1px 6px rgba(0,0,0,.25);
+			overflow-x: visible;
+			z-index: 10;
+		}
+
+		&__sublink {
+			display: block;
+			padding: 6px 0;
+			color: #0fadc4;
+			font-weight: bold;
+			line-height: 1.2;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	
+// END mainHeader===========================
